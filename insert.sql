@@ -19,7 +19,7 @@ INSERT INTO artists ("name") VALUES
 
 INSERT INTO tracks (album_id,"name",duration) VALUES
 	 (1,'Выхода нет',227),
-	 (1,'Моё сердце',250),
+	 (1,'My heart',250),
 	 (2,'Русский Христос',276),
 	 (7,'Пачка сигарет',226),
 	 (6,'Хочу перемен',295),
