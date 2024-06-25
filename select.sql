@@ -12,7 +12,8 @@ SELECT name FROM artists
 WHERE name NOT LIKE '% %'
 
 SELECT name FROM tracks
-WHERE lower(name) LIKE '%моё%' OR lower(name) LIKE '%my%';
+WHERE name ILIKE 'my %' OR name ILIKE '% my' OR name ILIKE '% my %' OR name = 'my'
+OR name ILIKE 'мой %' OR name ILIKE '% мой' OR name ILIKE '% мой %' OR name = 'мой';
 
 SELECT name, COUNT(artistgenre.artist_id) FROM public."genres"
 JOIN public."artistgenre" ON "genres".id = public."artistgenre".genre_id 
